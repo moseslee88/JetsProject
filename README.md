@@ -8,4 +8,4 @@ This is my week 2 weekend homework project. Key topics this week include:
 *Interfaces
 *Polymorphism
 
-I will start by looking over my UML
+I will start by looking over my UML.
