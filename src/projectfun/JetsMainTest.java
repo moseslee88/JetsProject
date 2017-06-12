@@ -20,7 +20,7 @@ public class JetsMainTest {
 		Jetprice f35 = new Jetprice("F-35 Lightning", 1499.0F, 2622.2F, 80_000_000 );
 		Jetprice drafale = new Jetprice("Dassault Rafale", 1188.0F, 2299.0F, 89_000_000 );
 		Jetprice mig35 = new Jetprice("MiG 35", 1491.3F, 1242.0F, 55_000_000 );
-		Jetprice gripen = new Jetprice("JAS 39 Gripen", 1370.0F, 2019.0F, 60_000_000 );
+		Jetprice gripen = new Jetprice("JAS 39 Gripen", 1370.0F, 2019.0F, 60_000_000 );        
 	
 
 		private void playGame() {
