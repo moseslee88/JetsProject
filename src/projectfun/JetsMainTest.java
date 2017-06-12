@@ -8,7 +8,6 @@ public class JetsMainTest {
 	public static void main(String[] args) {
 			// this is where the program actually runs through main. I      		tried to keep this as short as possible
 		Scanner input = new Scanner(System.in);
-		String fighters[] = { "Lockheed Martin F-22 Raptor", "Chengdu J-10", "Eurofighter Typhoon", "Lockheed Martin F-35 Lightning", "Dassault Rafale", "MiG 35", "Saab JAS 39 Gripen"};
 	
 	//I decided to load 1 of my favorite fighter Jets into jetsss array 
 		jetsss[0] = new Jetprice("F22-Raptor", 1497.5F, 2000.0F, 150_000_000 );
