@@ -15,11 +15,11 @@ public class Jets {
 		}
 
 		public Float getMaxspeed() {
-			return maxspeed;
+			return maxspeed * 0.00130332f;
 		}
 
 		public void setMaxspeed(Float maxspeed) {
-			this.maxspeed = maxspeed;
+			this.maxspeed = maxspeed * 0.00130332f;   //I googled how to convert speed in mph to Mach number
 		}
 
 		public Float getRange() {
@@ -33,7 +33,7 @@ public class Jets {
 
 		public Jets(String model, Float speed, Float range) {
 			this.model = model;
-			this.maxspeed = maxspeed;  
+			this.maxspeed = maxspeed * 0.00130332f;  
 			this.range = range;
 		}
 		

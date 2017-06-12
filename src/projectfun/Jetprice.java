@@ -2,13 +2,12 @@ package projectfun;
 
 
 public class Jetprice extends Jets {
-		protected int price;
+		protected int price;  
 	
 
-
-		public Jetprice(String model, Float speed, Float range, int price) {
+		public Jetprice(String model, Float maxspeed, Float range, int price) {
 			this.model = model;
-			this.maxspeed = maxspeed;  
+			this.maxspeed = maxspeed * 0.00130332f;  //I Googled the conversion rate between mph and Mach number  
 			this.range = range;
 			this.price = price;
 		}
@@ -24,19 +23,29 @@ public class Jetprice extends Jets {
 		public void setPrice(int price) {
 			this.price = price;
 		}
-		
-		//  calculateRegistrationFee()
-	//	public static Double calculateRegistrationFee() {
-		//	double fee = 0.01;
-		//	return fee;
-	//	}
-//		returns a double. The fee should be 1% of the purchase price, less .01% for each yearthatthevehicleisold,butnolessthan 5%ofthepurchaseprice. (Hint:Youcanretrievethe current year by calling java.time.Year.now().getValue()).
-		
+				
 		@Override
 		public String toString() {
-			return "FighterJet [Model=" + model + ", Max speed=" + maxspeed + ", range=" + range + ", price=" + price + "]";
+			StringBuilder builder = new StringBuilder();
+			builder.append("Model: ");
+			builder.append(model);
+			builder.append("\nSpeed in Mach(sound): ");
+			builder.append(maxspeed);
+			builder.append("\nRange: ");
+			builder.append(range);
+			builder.append("\nPrice: ");
+			builder.append(price + ".00");
+			return builder.toString();
+//			return "FighterJet [Model=" + model + ", Max speed=" + maxspeed + ", range=" + range + ", price=" + price + "]";
+		}
+
+		public void viewlist(Jetprice[] jetsss) {
+	    	for (int i = 0; i < jetsss.length; i++ ) {
+	    	  if (jetsss[i] != null) {
+	    		  System.out.println(jetsss[i] );
+	    	  }
+	      }
+			
 		}
 		
-
-
 		}
