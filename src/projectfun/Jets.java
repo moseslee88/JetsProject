@@ -2,8 +2,9 @@ package projectfun;
 
 public class Jets {
 	    protected String model;
-	    protected Float speed;
+	    protected Float maxspeed;
 	    protected Float range;
+	    
 
 		public String getModel() {
 			return model;
@@ -13,12 +14,12 @@ public class Jets {
 			this.model = model;
 		}
 
-		public Float getSpeed() {
-			return speed;
+		public Float getMaxspeed() {
+			return maxspeed;
 		}
 
-		public void setSpeed(Float speed) {
-			this.speed = speed;
+		public void setMaxspeed(Float maxspeed) {
+			this.maxspeed = maxspeed;
 		}
 
 		public Float getRange() {
@@ -32,7 +33,7 @@ public class Jets {
 
 		public Jets(String model, Float speed, Float range) {
 			this.model = model;
-			this.speed = speed;  
+			this.maxspeed = maxspeed;  
 			this.range = range;
 		}
 		
@@ -40,6 +41,3 @@ public class Jets {
 
 		}
 	}
-	
-	
-	

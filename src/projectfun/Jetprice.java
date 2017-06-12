@@ -8,7 +8,7 @@ public class Jetprice extends Jets {
 
 		public Jetprice(String model, Float speed, Float range, int price) {
 			this.model = model;
-			this.speed = speed;  
+			this.maxspeed = maxspeed;  
 			this.range = range;
 			this.price = price;
 		}
@@ -34,7 +34,7 @@ public class Jetprice extends Jets {
 		
 		@Override
 		public String toString() {
-			return "FighterJet [Model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+			return "FighterJet [Model=" + model + ", Max speed=" + maxspeed + ", range=" + range + ", price=" + price + "]";
 		}
 		
 
