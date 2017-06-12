@@ -6,6 +6,7 @@ public class Hanger {
 
 	public static void addjet(Jetprice[] jetsss) {
 		Scanner input = new Scanner(System.in);
+		
 		for( int i = 0; i < jetsss.length; i++){
 	        if (jetsss[i] != null) {
 	        	System.out.println("Model: ");
